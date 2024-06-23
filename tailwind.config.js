@@ -1,10 +1,11 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.{html,js}"],
+  content: ["./src/**/*.{html,js,svg}"],
   theme: {
     extend: {
       fontFamily: {
-        sans: ["General Sans", "sans-serif"],
+        header: ["General Sans", "sans-serif"],
+        sans: ["Clash Grotesk Variable", "sans-serif"],
       },
       colors: {
         background: "#010D00",

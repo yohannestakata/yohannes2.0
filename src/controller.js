@@ -86,7 +86,7 @@ document.addEventListener("mousemove", (e) => {
     });
   }
 
-  const hoveredElement = e.toElement;
+  const hoveredElement = e.target;
 
   if (hoveredElement.id === "work-amedie") {
     cursorText.innerHTML = "";

@@ -4,7 +4,12 @@
 
 @font-face {
   font-family: "General Sans";
-  src: url("../assets/fonts/GeneralSans-Variable.ttf");
+  src: url("./assets/fonts/GeneralSans-Variable.ttf");
+}
+
+@font-face {
+  font-family: "Clash Grotesk Variable";
+  src: url("./assets/fonts/ClashGrotesk-Variable.ttf");
 }
 
 html.lenis,
@@ -13,7 +18,7 @@ html.lenis body {
 }
 
 .texture {
-  background-image: url("../assets/images/black-felt.png");
+  background-image: url("./assets/images/black-felt.png");
 }
 
 .texture-50 {
@@ -21,7 +26,7 @@ html.lenis body {
       rgba(221, 238, 225, 0.75),
       rgba(221, 238, 225, 0.75)
     ),
-    url("../assets/images/black-felt.png");
+    url("./assets/images/black-felt.png");
 }
 
 .lenis.lenis-smooth {
@@ -61,12 +66,12 @@ html.lenis body {
 }
 
 #work-visualize {
-  background-image: url("../assets/images/3D.webp"),
-    url("../assets/images/black-felt.png");
+  background-image: url("./assets/images/3D.webp"),
+    url("./assets/images/black-felt.png");
 }
 
 #work-amedie {
-  background-image: url("../assets/images/nature.webp");
+  background-image: url("./assets/images/nature.webp");
 }
 
 .animate-header span {

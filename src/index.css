@@ -46,7 +46,7 @@ html,
   -o-tab-size: 4;
      tab-size: 4;
   /* 3 */
-  font-family: General Sans, sans-serif;
+  font-family: Clash Grotesk Variable, sans-serif;
   /* 4 */
   font-feature-settings: normal;
   /* 5 */
@@ -692,6 +692,10 @@ video {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+.transform {
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 @keyframes pulse {
   50% {
     opacity: .5;
@@ -828,11 +832,6 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-red-900 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(127 29 29 / var(--tw-bg-opacity));
-}
-
 .bg-cover {
   background-size: cover;
 }
@@ -894,8 +893,8 @@ video {
   padding-left: 1rem;
 }
 
-.pt-16 {
-  padding-top: 4rem;
+.font-sans {
+  font-family: Clash Grotesk Variable, sans-serif;
 }
 
 .text-3xl {
@@ -976,7 +975,13 @@ video {
 @font-face {
   font-family: "General Sans";
 
-  src: url("../assets/fonts/GeneralSans-Variable.ttf");
+  src: url("./assets/fonts/GeneralSans-Variable.ttf");
+}
+
+@font-face {
+  font-family: "Clash Grotesk Variable";
+
+  src: url("./assets/fonts/ClashGrotesk-Variable.ttf");
 }
 
 html.lenis,
@@ -985,7 +990,7 @@ html.lenis body {
 }
 
 .texture {
-  background-image: url("../assets/images/black-felt.png");
+  background-image: url("./assets/images/black-felt.png");
 }
 
 .texture-50 {
@@ -993,7 +998,7 @@ html.lenis body {
       rgba(221, 238, 225, 0.75),
       rgba(221, 238, 225, 0.75)
     ),
-    url("../assets/images/black-felt.png");
+    url("./assets/images/black-felt.png");
 }
 
 .lenis.lenis-smooth {
@@ -1034,12 +1039,12 @@ html.lenis body {
 }
 
 #work-visualize {
-  background-image: url("../assets/images/3D.webp"),
-    url("../assets/images/black-felt.png");
+  background-image: url("./assets/images/3D.webp"),
+    url("./assets/images/black-felt.png");
 }
 
 #work-amedie {
-  background-image: url("../assets/images/nature.webp");
+  background-image: url("./assets/images/nature.webp");
 }
 
 .animate-header span {
