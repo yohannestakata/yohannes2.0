@@ -897,6 +897,10 @@ video {
   font-family: Clash Grotesk Variable, sans-serif;
 }
 
+.font-header {
+  font-family: General Sans, sans-serif;
+}
+
 .text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem;
