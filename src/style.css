@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "General Sans";
+  src: url("../assets/fonts/GeneralSans-Variable.ttf");
+}
+
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+
+.texture {
+  background-image: url("../assets/images/black-felt.png");
+}
+
+.texture-50 {
+  background-image: linear-gradient(
+      rgba(221, 238, 225, 0.75),
+      rgba(221, 238, 225, 0.75)
+    ),
+    url("../assets/images/black-felt.png");
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-smooth iframe {
+  pointer-events: none;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.marquee {
+  animation-name: marquee;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.marquee-parent:hover .marquee {
+  animation-play-state: paused;
+}
+
+#work-visualize {
+  background-image: url("../assets/images/3D.webp"),
+    url("../assets/images/black-felt.png");
+}
+
+#work-amedie {
+  background-image: url("../assets/images/nature.webp");
+}
+
+.animate-header span {
+  display: inline-block;
+  transform: translateY(-24px);
+  animation-timing-function: ease-in-out;
+  opacity: 0;
+}
