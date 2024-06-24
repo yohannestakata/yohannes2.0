@@ -19,7 +19,7 @@
       }
 
       .cls-5 {
-        fill: #ddeee1;
+        fill: #010d00;
         font-family: GeneralSansVariable-Semibold, 'General Sans Variable';
         font-size: 12px;
         font-variation-settings: 'wght' 600;

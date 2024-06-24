@@ -74,17 +74,15 @@ let cursorClientY = 0;
 document.addEventListener("mousemove", (e) => {
   cursorClientY = e.clientY;
 
-  if (document.querySelector("#works").getBoundingClientRect().top < 1000) {
-    cursor.animate([{ left: `${e.pageX}px`, top: `${e.pageY}px` }], {
-      duration: 500,
-      fill: "forwards",
-      delay: 10,
-    });
-    cursorText.animate([{ left: `${e.pageX}px`, top: `${e.pageY}px` }], {
-      duration: 200,
-      fill: "forwards",
-    });
-  }
+  cursor.animate([{ left: `${e.pageX}px`, top: `${e.pageY}px` }], {
+    duration: 500,
+    fill: "forwards",
+    delay: 10,
+  });
+  cursorText.animate([{ left: `${e.pageX}px`, top: `${e.pageY}px` }], {
+    duration: 200,
+    fill: "forwards",
+  });
 
   const hoveredElement = e.target;
 
@@ -152,19 +150,14 @@ document.addEventListener("mousemove", (e) => {
   }
 });
 document.addEventListener("scroll", (e) => {
-  if (document.querySelector("#works").getBoundingClientRect().top < 200) {
-    cursor.classList.add("show");
-    cursor.classList.remove("hidden");
-    cursor.animate(
-      { top: `${window.scrollY + cursorClientY}px` },
-      { duration: 500, fill: "forwards", delay: 0 }
-    );
-    cursorText.animate(
-      { top: `${window.scrollY + cursorClientY}px` },
-      { duration: 500, fill: "forwards", delay: 0 }
-    );
-  } else {
-    cursor.classList.add("hidden");
-    cursor.classList.remove("show");
-  }
+  cursor.classList.add("show");
+  cursor.classList.remove("hidden");
+  cursor.animate(
+    { top: `${window.scrollY + cursorClientY}px` },
+    { duration: 500, fill: "forwards", delay: 0 }
+  );
+  cursorText.animate(
+    { top: `${window.scrollY + cursorClientY}px` },
+    { duration: 500, fill: "forwards", delay: 0 }
+  );
 });
