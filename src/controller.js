@@ -49,21 +49,51 @@ gsap.to(".works", {
   },
 });
 
-const animatedHeader = document.querySelector(".animate-header");
+gsap.to("#about", {
+  scaleX: "0.80",
+  scrollTrigger: {
+    trigger: "#contact",
+    start: "top bottom",
+    scrub: true,
+    // markers: true,
+  },
+});
+
+gsap.to("#about-text", {
+  y: -400,
+  scrollTrigger: {
+    trigger: "#contact",
+    start: "top bottom",
+    scrub: true,
+    // markers: true,
+  },
+});
+
+gsap.to("#about-text", {
+  marginTop: "-48px",
+  scrollTrigger: {
+    trigger: "#about-text",
+    start: "top bottom",
+  },
+});
+
+const animatedHeader = document.querySelectorAll(".animate-header");
 
 console.log(animatedHeader.children);
 
-[...animatedHeader.children].forEach((char, i) => {
-  console.log(char);
-  gsap.to(char, {
-    y: 0,
-    opacity: 1,
-    delay: 0.04 * i,
-    duration: 0.2,
-    scrollTrigger: {
-      trigger: animatedHeader,
-      start: "top 80%",
-    },
+animatedHeader.forEach((header) => {
+  [...header.children].forEach((char, i) => {
+    console.log(char);
+    gsap.to(char, {
+      y: 0,
+      opacity: 1,
+      delay: 0.04 * i,
+      duration: 0.2,
+      scrollTrigger: {
+        trigger: header,
+        start: "top 80%",
+      },
+    });
   });
 });
 

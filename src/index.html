@@ -7,8 +7,9 @@
     <link rel="stylesheet" href="./index.css" />
   </head>
   <body class="selection:bg-green-800 selection:text-green-50 relative">
+    <div class="w-full h-6 bg-black sticky -mb-6 top-0 top-border"></div>
     <div class="p-6 bg-black">
-      <div class="text-primary rounded-3xl text-background text-xl">
+      <div class="text-primary rounded-3xl text-xl bg-foreground texture-50">
         <header
           class="text-background bg-foreground bg-fixed texture-50 rounded-t-3xl sticky top-6 p-16 z-0"
         >
@@ -137,13 +138,14 @@
               </div>
 
               <p class="text-3xl mt-auto">
-                Helping startups all over the world gain their unfair advantage
-                by crafting visions into digital experiences people cherish.
+                Helping businesses all over the world gain their unfair
+                advantage by crafting visions into digital experiences people
+                cherish.
               </p>
             </div>
           </div>
         </header>
-        <main class="z-20 relative">
+        <main class="z-20 relative rounded-3xl">
           <section
             class="bg-background text-foreground rounded-3xl rounded-b-none p-16 texture"
             id="services"
@@ -250,7 +252,7 @@
               ><span>K</span><span>S</span><span>&nbsp;</span><span>:</span
               ><span>\</span>
             </h2>
-            <div class="overflow-hidden w-full works-wrapper rounded-lg">
+            <div class="overflow-hidden w-full works-wrapper rounded-3xl">
               <div class="flex gap-6 flex-nowrap works">
                 <a
                   href="https://visualize-qakf.onrender.com"
@@ -280,8 +282,50 @@
               </div>
             </div>
           </section>
-          <section class="h-screen w-full bg-blue-950"></section>
-          <section class="h-screen w-full bg-blue-950"></section>
+
+          <section
+            class="bg-background bg-fixed texture text-foreground px-16 pb-16 pt-10 rounded-b-3xl min-h-screen grid grid-cols-9 gap-x-6"
+            id="about"
+          >
+            <h2
+              class="text-7xl text-foreground uppercase font-semibold flex-1 animate-header font-header col-span-5"
+            >
+              <span>A</span> <span>L</span><span>i</span><span>t</span
+              ><span>t</span><span>l</span><span>e</span><span>&nbsp;</span
+              ><span>b</span><span>i</span><span>t</span><span>&nbsp;</span
+              ><span>a</span><span>b</span><span>o</span><span>u</span
+              ><span>t</span><span>&nbsp;</span><span>m</span><span>e</span
+              ><span>&nbsp;</span><span>;)</span>
+            </h2>
+            <div class="row-start-2 col-start-4 col-span-3 -mt-12">
+              <img
+                src="./assets/images/me.png"
+                alt=""
+                class="w-full rounded-3xl mix-blend-exclusion"
+              />
+            </div>
+            <p
+              class="col-span-full col-start-6 text-3xl row-start-3"
+              id="about-text"
+            >
+              Driven by my love for development, I take project from inception
+              to launch, ensuring seamless journey that leaves a lasting impact
+              in the digital landscape.
+            </p>
+          </section>
+
+          <section class="bg-foreground p-16 texture-50" id="contact">
+            <h2
+              class="text-7xl uppercase font-semibold flex-1 animate-header font-header text-background"
+            >
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Possimus dolores quas ab modi vitae eveniet eum ipsa porro quam
+                sunt fugiat, minus excepturi quod rerum corrupti saepe libero
+                eos inventore.
+              </p>
+            </h2>
+          </section>
         </main>
       </div>
     </div>
