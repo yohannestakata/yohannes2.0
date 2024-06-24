@@ -93,17 +93,17 @@ document.addEventListener("mousemove", (e) => {
         {
           height: `${288}px`,
           width: `${288}px`,
-          borderRadius: "8px",
+          borderRadius: "24px",
           mixBlendMode: "normal",
         },
       ],
       {
-        duration: 200,
+        duration: 500,
         fill: "forwards",
       }
     );
 
-    cursor.innerHTML = `<div class="p-6 bg-background text-foreground h-full rounded-lg">
+    cursor.innerHTML = `<div class="p-6 bg-background text-foreground h-full rounded-3xl">
     <h3 class="text-3xl font-semibold">${hoveredElement.dataset.title}</h3>
     <span class="opacity-75">${hoveredElement.dataset.subtitle}</span>
     <p class="text-lg mt-4">${hoveredElement.dataset.description}</p>
