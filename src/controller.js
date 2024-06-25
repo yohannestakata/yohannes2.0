@@ -78,15 +78,17 @@ gsap.to("#about-text", {
 });
 
 gsap.to("#contact-header", {
-  y: 0,
-  scale: 1,
+  x: 0,
   opacity: 1,
+
   fill: "forwards",
   scrollTrigger: {
     trigger: "#contact-header-wrapper",
-    start: "top 80%",
+    start: "top 120%",
+    end: "bottom 50%",
     duration: 200,
     // markers: true,
+    scrub: true,
   },
 });
 
