@@ -6,7 +6,10 @@
     <title>Yohannes Takata</title>
     <link rel="stylesheet" href="./index.css" />
   </head>
-  <body class="selection:bg-green-800 selection:text-green-50 relative">
+  <body
+    class="selection:bg-green-800 selection:text-green-50 relative cursor-none"
+    id="home"
+  >
     <div class="w-full h-6 bg-black sticky -mb-6 top-0 top-border"></div>
     <div class="p-6 bg-black">
       <div class="text-primary rounded-3xl text-xl bg-foreground texture-50">
@@ -164,7 +167,6 @@
                 </p>
               </div>
             </div>
-            <!-- these aren't sticking. why? -->
             <div class="sticky top-32 bg-background texture bg-fixed">
               <hr class="border border-foreground/20" />
               <div class="py-12">
@@ -176,8 +178,10 @@
                       <> Web Development
                     </h2>
                     <p class="mt-6">
-                      I craft unique websites that reflect your brand. Scalable,
-                      fast, accessible, and engaging. Make a lasting impression.
+                      By using web technologies like HTML5, CSS3, JavaScript,
+                      React, Node.js, and more, I craft unique websites that
+                      reflect your brand by making them scalable, fast,
+                      accessible, and engaging.
                     </p>
                   </div>
                   <ul class="text-3xl font-semibold flex flex-1 flex-col gap-4">
@@ -201,8 +205,8 @@
                       ^ Web Design
                     </h2>
                     <p class="mt-6">
-                      I craft unique websites that reflect your brand. Scalable,
-                      fast, accessible, and engaging. Make a lasting impression.
+                      I leverage the power of figma to create designs that
+                      create lasting impressions.
                     </p>
                   </div>
                   <ul class="text-3xl font-semibold flex flex-1 flex-col gap-4">
@@ -224,8 +228,8 @@
                       [ ] Desktop and Mobile App Development
                     </h2>
                     <p class="mt-6">
-                      I craft unique websites that reflect your brand. Scalable,
-                      fast, accessible, and engaging. Make a lasting impression.
+                      I build powerful and intuitive applications that
+                      seamlessly fit your users' needs.
                     </p>
                   </div>
                   <ul class="text-3xl font-semibold flex flex-1 flex-col gap-4">
@@ -299,7 +303,7 @@
             <div class="row-start-2 col-start-4 col-span-3 -mt-12">
               <img
                 src="./assets/images/me.png"
-                alt=""
+                alt="Yohannes Takata"
                 class="w-full rounded-3xl mix-blend-exclusion"
               />
             </div>
@@ -307,7 +311,7 @@
               class="col-span-full col-start-6 text-3xl row-start-3"
               id="about-text"
             >
-              Driven by my love for development, I take project from inception
+              Driven by my love for development, I take projects from inception
               to launch, ensuring seamless journey that leaves a lasting impact
               in the digital landscape.
             </p>
@@ -317,13 +321,136 @@
             <h2
               class="text-7xl uppercase font-semibold flex-1 animate-header font-header text-background"
             >
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Possimus dolores quas ab modi vitae eveniet eum ipsa porro quam
-                sunt fugiat, minus excepturi quod rerum corrupti saepe libero
-                eos inventore.
-              </p>
+              Don't just take my word for it
             </h2>
+            <div class="mt-6 space-y-4">
+              <div
+                class="p-6 bg-card sticky top-32 backdrop-blur-xl rounded-3xl grid grid-cols-9"
+              >
+                <div class="col-span-6 w-full">
+                  <span class="">
+                    <q class="col-span-6 text-2xl">
+                      Besides designing an awesome website, Yohannes helped us
+                      clarify our business goals and direction through his
+                      thoughtful questions.
+                    </q>
+                  </span>
+                  <div class="mt-4 flex items-center gap-4">
+                    <div
+                      class="w-16 rounded-full aspect-square flex items-center justify-center overflow-hidden"
+                    >
+                      <img
+                        src="./assets/images/tsion.png"
+                        alt=""
+                        class="object-cover"
+                      />
+                    </div>
+                    <div class="flex flex-col">
+                      <span>Tsion Girum</span>
+                      <span class="text-base opacity-70"
+                        >Alem Computer Technology</span
+                      >
+                    </div>
+                  </div>
+                </div>
+                <img
+                  src="./assets/images/circle-shapes.svg"
+                  alt="Yohannes logo"
+                  class="w-full col-start-8 opacity-5 col-span-2"
+                />
+              </div>
+              <div
+                class="p-6 bg-card sticky top-32 backdrop-blur-xl rounded-3xl grid grid-cols-9"
+              >
+                <div class="col-span-6 w-full">
+                  <span class="">
+                    <q class="col-span-6 text-2xl">
+                      Yohannes is a talented, web developer and designer with
+                      great attention to detail. Working with him is a great
+                      experience.
+                    </q>
+                  </span>
+                  <div class="mt-4 flex items-center gap-4">
+                    <div
+                      class="w-16 rounded-full aspect-square flex items-center justify-center overflow-hidden"
+                    >
+                      <img
+                        src="./assets/images/abdul.png"
+                        alt=""
+                        class="object-cover"
+                      />
+                    </div>
+                    <div class="flex flex-col">
+                      <span>Abdulkerim Getnet</span>
+                      <span class="text-base opacity-70">Abdul Studios</span>
+                    </div>
+                  </div>
+                </div>
+                <img
+                  src="./assets/images/traingle-shapes.svg"
+                  alt="Yohannes logo"
+                  class="w-full col-start-8 opacity-5 col-span-2"
+                />
+              </div>
+            </div>
+          </section>
+          <section
+            class="bg-foreground p-16 texture-50 rounded-b-3xl relative"
+            id="contact"
+          >
+            <div
+              class="circle absolute h-full aspect-square rounded-full bg-red-900 -translate-x-1/2 opacity-5 top-0 left-1/2 scale-50"
+            ></div>
+            <div class="overflow-hidden" id="contact-header-wrapper">
+              <img
+                src="./assets/images/get-in-touch.svg"
+                alt="GET IN TOUCH"
+                class="translate-y-full scale-75 opacity-0"
+                id="contact-header"
+              />
+            </div>
+            <div class="mt-6 grid grid-cols-9 gap-6">
+              <div class="col-span-4">
+                <h3 class="font-semibold">Navigation</h3>
+                <hr class="border border-background my-3" />
+                <ul class="space-y-2">
+                  <li class="hover:underline"><a href="#home">Home</a></li>
+                  <li class="hover:underline">
+                    <a href="#services">Services</a>
+                  </li>
+
+                  <li class="hover:underline"><a href="#works">Works</a></li>
+                  <li class="hover:underline"><a href="#about">About</a></li>
+                </ul>
+              </div>
+              <div class="col-span-4 col-start-6">
+                <h3 class="font-semibold">Socials</h3>
+                <hr class="border border-background my-3" />
+                <ul class="space-y-2">
+                  <li class="hover:underline">
+                    <a
+                      href="https://www.linkedin.com/in/yohannes-takata/"
+                      target="_blank"
+                    >
+                      Linkedin</a
+                    >
+                  </li>
+                  <li class="hover:underline">
+                    <a
+                      href="https://github.com/yohannestakata/"
+                      target="_blank"
+                    >
+                      Github</a
+                    >
+                  </li>
+                  <li class="hover:underline">
+                    <a href="mailto:yohannesmasayuki@gmail.com" target="_blank">
+                      yohannesmasayuki@gmail.com</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
           </section>
         </main>
       </div>

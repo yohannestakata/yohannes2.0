@@ -50,20 +50,20 @@ gsap.to(".works", {
 });
 
 gsap.to("#about", {
-  scaleX: "0.80",
+  scaleX: "0.85",
   scrollTrigger: {
     trigger: "#contact",
-    start: "top bottom",
+    start: "top 110%",
     scrub: true,
     // markers: true,
   },
 });
 
 gsap.to("#about-text", {
-  y: -400,
+  y: -300,
   scrollTrigger: {
-    trigger: "#contact",
-    start: "top bottom",
+    trigger: "#about-text",
+    start: "top 80%",
     scrub: true,
     // markers: true,
   },
@@ -74,6 +74,28 @@ gsap.to("#about-text", {
   scrollTrigger: {
     trigger: "#about-text",
     start: "top bottom",
+  },
+});
+
+gsap.to("#contact-header", {
+  y: 0,
+  scale: 1,
+  opacity: 1,
+  fill: "forwards",
+  scrollTrigger: {
+    trigger: "#contact-header-wrapper",
+    start: "top 80%",
+    duration: 200,
+    // markers: true,
+  },
+});
+
+gsap.to(".circle", {
+  scale: 1,
+  scrollTrigger: {
+    trigger: "#contact-header-wrapper",
+    start: "top 80%",
+    scrub: true,
   },
 });
 
@@ -105,12 +127,11 @@ document.addEventListener("mousemove", (e) => {
   cursorClientY = e.clientY;
 
   cursor.animate([{ left: `${e.pageX}px`, top: `${e.pageY}px` }], {
-    duration: 500,
+    duration: 100,
     fill: "forwards",
-    delay: 10,
   });
   cursorText.animate([{ left: `${e.pageX}px`, top: `${e.pageY}px` }], {
-    duration: 200,
+    duration: 0,
     fill: "forwards",
   });
 

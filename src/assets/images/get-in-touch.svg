@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 86.39 13.24">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #0d140d;
+        font-family: GeneralSansVariable-Semibold, 'General Sans Variable';
+        font-size: 12px;
+        font-variation-settings: 'wght' 600;
+        font-weight: 600;
+      }
+
+      .cls-2 {
+        letter-spacing: -.04em;
+      }
+    </style>
+  </defs>
+  <g id="Layer_1-2" data-name="Layer 1">
+    <text class="cls-1" transform="translate(0 10.31)"><tspan x="0" y="0">GET IN </tspan><tspan class="cls-2" x="42.22" y="0">T</tspan><tspan x="49.4" y="0">OUCH</tspan></text>
+  </g>
+</svg>
