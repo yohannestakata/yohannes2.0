@@ -103,11 +103,8 @@ gsap.to(".circle", {
 
 const animatedHeader = document.querySelectorAll(".animate-header");
 
-console.log(animatedHeader.children);
-
 animatedHeader.forEach((header) => {
   [...header.children].forEach((char, i) => {
-    console.log(char);
     gsap.to(char, {
       y: 0,
       opacity: 1,
