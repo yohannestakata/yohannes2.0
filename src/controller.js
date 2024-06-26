@@ -84,8 +84,8 @@ gsap.to("#contact-header", {
   fill: "forwards",
   scrollTrigger: {
     trigger: "#contact-header-wrapper",
-    start: "top 120%",
-    end: "bottom 50%",
+    start: "top 100%",
+    end: "bottom 60%",
     duration: 200,
     // markers: true,
     scrub: true,
