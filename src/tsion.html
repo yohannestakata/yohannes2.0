@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex, nofollow" />
+    <title>For Tsion 💕</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body
+    class="selection:bg-green-800 selection:text-green-50 relative cursor-none min-h-screen"
+    id="tsion-page"
+  >
+    <div class="w-full h-4 md:h-6 bg-black sticky -mb-6 top-0 top-border"></div>
+    <div class="md:p-6 p-4 bg-black min-h-screen">
+      <div
+        class="text-primary rounded-3xl text-xl bg-foreground texture-50 min-h-screen"
+      >
+        <div
+          class="text-background bg-foreground bg-fixed texture-50 rounded-3xl p-4 sm:p-6 md:p-16 lg:p-24 flex flex-col items-center justify-center min-h-[calc(100vh-3rem)]"
+        >
+          <div class="max-w-6xl w-full space-y-8 text-center">
+            <div class="flex justify-center mb-6 md:mb-8 relative">
+              <div
+                class="w-24 h-24 sm:w-32 sm:h-32 md:w-48 md:h-48 rounded-full overflow-hidden border-4 border-background hover:scale-110 transition-transform duration-300"
+              >
+                <img
+                  src="./assets/images/tsion.png"
+                  alt="Tsion"
+                  class="w-full h-full object-cover"
+                />
+              </div>
+              <div
+                class="absolute -top-2 -right-2 sm:-top-4 sm:-right-4 text-2xl sm:text-3xl md:text-4xl animate-bounce"
+              >
+                💝
+              </div>
+              <div
+                class="absolute -bottom-2 -left-2 sm:-bottom-4 sm:-left-4 text-xl sm:text-2xl md:text-3xl animate-pulse"
+              >
+                ✨
+              </div>
+            </div>
+
+            <h1 class="font-header flex flex-col font-semibold uppercase mb-4">
+              <span class="text-2xl md:text-3xl">So... 👀 Will You Be</span>
+              <span
+                class="text-red-700 text-4xl md:text-6xl lg:text-8xl mt-2 leading-tight"
+                >My Valentine 💝?</span
+              >
+            </h1>
+
+            <div
+              class="space-y-4 md:space-y-5 max-w-3xl mx-auto text-lg sm:text-xl md:text-2xl lg:text-3xl font-sans px-4"
+            >
+              <p class="leading-tight">
+                Hey Tsi! ✨ It's been 4 amazing years together, and somehow it
+                still feels like I first laid eyes on you yesterday.
+              </p>
+              <p
+                class="leading-relaxed text-base sm:text-lg md:text-xl lg:text-2xl"
+              >
+                After 4 x 360 days of putting up with me,<span class="text-sm">
+                  and forgetting last year </span
+                >, I figured the least I could do is ask you properly this time.
+                😅
+              </p>
+            </div>
+
+            <div
+              class="mt-8 md:mt-16 flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center items-center px-4"
+            >
+              <button
+                id="yes-button"
+                class="w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 bg-background text-foreground rounded-full font-semibold text-base sm:text-lg md:text-xl hover:scale-110 hover:rotate-2 transition-all duration-200 transform text-center cursor-pointer"
+              >
+                ABSOLUTELY! 💖✨
+              </button>
+              <button
+                id="maybe-button"
+                class="w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 border-2 border-background text-background rounded-full font-semibold text-base sm:text-lg md:text-xl hover:bg-background hover:text-foreground hover:scale-105 transition-all duration-200 text-center cursor-pointer"
+              >
+                Maybe Later? 😏
+              </button>
+            </div>
+
+            <div
+              class="mt-12 md:mt-16 pt-6 md:pt-8 border-t border-background/20 px-4"
+            >
+              <p class="text-sm sm:text-base md:text-lg opacity-75">
+                P.S. - I coded this whole page just for you. No pressure or
+                anything... 😉<br />
+                <span
+                  class="font-semibold text-base sm:text-lg md:text-xl mt-2 block"
+                  >With all my love, Yohannes 💻❤️</span
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      id="cursor"
+      class="min-h-4 min-w-4 rounded-full absolute bg-white top-0 left-0 -translate-y-1/2 -translate-x-1/2 pointer-events-none mix-blend-difference ease-out z-50"
+    ></div>
+    <div
+      id="cursor-text"
+      class="pointer-events-none absolute top-0 left-0 -translate-y-1/2 -translate-x-1/2 opacity-100 underline text-background z-50"
+    ></div>
+
+    <!-- Dialog Modal -->
+    <div
+      id="dialog-overlay"
+      class="fixed inset-0 bg-black/50 backdrop-blur-sm z-[100] hidden items-center justify-center p-4"
+    >
+      <div
+        id="dialog-content"
+        class="bg-foreground text-background rounded-3xl p-6 md:p-8 max-w-md w-full shadow-2xl transform scale-95 opacity-0 transition-all duration-300"
+      >
+        <div class="text-center space-y-4">
+          <div id="dialog-emoji" class="text-5xl md:text-6xl mb-4"></div>
+          <h2
+            id="dialog-title"
+            class="text-2xl md:text-3xl font-header font-semibold uppercase mb-4"
+          ></h2>
+          <p
+            id="dialog-message"
+            class="text-lg md:text-xl font-sans leading-relaxed"
+          ></p>
+          <div
+            id="dialog-actions"
+            class="mt-6 flex flex-col sm:flex-row gap-3 justify-center items-center"
+          >
+            <!-- Telegram button will be inserted here for yes button -->
+          </div>
+          <button
+            id="dialog-close"
+            class="mt-4 px-6 py-3 bg-background/20 text-background rounded-full font-semibold text-lg hover:bg-background/30 hover:scale-105 transition-all duration-200"
+          >
+            Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/lenis@1.1.3/dist/lenis.min.js"></script>
+    <script src="./controller.js" type="module"></script>
+    <script>
+      // Dialog functionality
+      const dialogOverlay = document.getElementById("dialog-overlay");
+      const dialogContent = document.getElementById("dialog-content");
+      const dialogEmoji = document.getElementById("dialog-emoji");
+      const dialogTitle = document.getElementById("dialog-title");
+      const dialogMessage = document.getElementById("dialog-message");
+      const dialogActions = document.getElementById("dialog-actions");
+      const dialogClose = document.getElementById("dialog-close");
+      const yesButton = document.getElementById("yes-button");
+      const maybeButton = document.getElementById("maybe-button");
+
+      // Replace with your Telegram username
+      const telegramUsername = "yohannestakata"; // Change this to your Telegram username
+
+      function showDialog(emoji, title, message, showTelegram = false) {
+        dialogEmoji.textContent = emoji;
+        dialogTitle.textContent = title;
+        dialogMessage.textContent = message;
+
+        // Clear and optionally add Telegram button
+        dialogActions.innerHTML = "";
+        if (showTelegram) {
+          const telegramButton = document.createElement("a");
+          telegramButton.href = `https://t.me/${telegramUsername}`;
+          telegramButton.target = "_blank";
+          telegramButton.className =
+            "px-6 py-3 bg-blue-500 text-white rounded-full font-semibold text-lg hover:bg-blue-600 hover:scale-105 transition-all duration-200 flex items-center gap-2";
+          telegramButton.innerHTML = "💬 Message me on Telegram";
+          dialogActions.appendChild(telegramButton);
+        }
+
+        dialogOverlay.classList.remove("hidden");
+        dialogOverlay.classList.add("flex");
+
+        // Animate in
+        setTimeout(() => {
+          dialogContent.classList.remove("scale-95", "opacity-0");
+          dialogContent.classList.add("scale-100", "opacity-100");
+        }, 10);
+      }
+
+      function hideDialog() {
+        dialogContent.classList.remove("scale-100", "opacity-100");
+        dialogContent.classList.add("scale-95", "opacity-0");
+
+        setTimeout(() => {
+          dialogOverlay.classList.add("hidden");
+          dialogOverlay.classList.remove("flex");
+        }, 300);
+      }
+
+      // Yes button - funny positive response with Telegram
+      yesButton.addEventListener("click", (e) => {
+        e.preventDefault();
+        showDialog(
+          "🎉",
+          "YAY! 🎊",
+          "YESSS! Now let me know on Telegram because I have no way of knowing you clicked this and so I can finally stop refreshing this page every 5 minutes. 😂💖",
+          true,
+        );
+      });
+
+      // Maybe Later button - "you have no choice" response
+      maybeButton.addEventListener("click", (e) => {
+        e.preventDefault();
+        showDialog(
+          "💻",
+          "SYSTEM ERROR",
+          "I spent way too much time on this page to accept a 'maybe later'. This site demands a 'yes'! Plus, you've been my girlfriend for almost 4 years... you kind of have to say yes. 😂",
+        );
+      });
+
+      // Close dialog
+      dialogClose.addEventListener("click", hideDialog);
+      dialogOverlay.addEventListener("click", (e) => {
+        if (e.target === dialogOverlay) {
+          hideDialog();
+        }
+      });
+
+      // Close on Escape key
+      document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape" && !dialogOverlay.classList.contains("hidden")) {
+          hideDialog();
+        }
+      });
+    </script>
+  </body>
+</html>
